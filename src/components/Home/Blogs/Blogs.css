@@ -1,0 +1,7 @@
+.main-blog {
+  height: 95vh;
+  background-color: gray;
+}
+.main-blog h2 {
+  letter-spacing: 18px;
+}

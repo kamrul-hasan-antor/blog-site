@@ -1,0 +1,49 @@
+.main {
+  height: 95vh;
+  background-image: url("../../../images/office-581131_1920.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+.main::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #222227;
+  opacity: 0.7;
+  height: 95vh;
+}
+.text-container {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  text-align: center;
+  color: aliceblue;
+}
+.text-container h1 {
+  font-size: 3.5rem;
+  text-transform: capitalize;
+}
+.text-container p {
+  font-size: 1.1rem;
+}
+.text-container span {
+  color: #0d6efd;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.text-container button {
+  width: 160px;
+}
+.text-container button a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+
+  text-transform: uppercase;
+  font-weight: 700;
+}
