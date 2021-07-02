@@ -15,16 +15,16 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="navMain ml-auto">
-            <Link className="nav-link text-white" to="/home">
+            <Link className="nav-link text-white" to="/">
               Home
             </Link>
-            <Link className="nav-link text-white" to="/deals">
+            <Link className="nav-link text-white" to="/">
               Blogs
             </Link>
             <Link className="nav-link text-white" to="/admin">
               Admin
             </Link>
-            <Link className="nav-link text-white" to="/login">
+            <Link className="nav-link text-white" to="/">
               Login
             </Link>
           </Nav>

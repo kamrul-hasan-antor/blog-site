@@ -1,0 +1,10 @@
+.manageTitle {
+  display: flex;
+}
+.manageTitle h5:nth-child(2) {
+  text-align: center;
+}
+.manageBlog-items img {
+  width: 60px;
+  height: 60px;
+}

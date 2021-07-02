@@ -1,15 +1,24 @@
 import React from "react";
-// import { useState } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import AllBlogs from "../AllBlogs/AllBlogs";
 import "./Blogs.css";
+
 const Blogs = () => {
-  // const [blogs, setBlogs] = useState({});
+  const [blogs, setBlog] = useState([]);
+  console.log(blogs);
+  useEffect(() => {
+    fetch("https://bagged-poutine-86328.herokuapp.com/blogs")
+      .then((res) => res.json())
+      .then((data) => setBlog(data));
+  }, []);
 
   return (
-    <div id="blogs" className="main-blog">
-      <h2 className="text-center page-title">blogs</h2>
-      <div className="container">
-        <h1>this is blog</h1>
-      </div>
+    <div>
+      <h1 className="page-title">Blogs</h1>
+      {blogs.map((blog) => (
+        <AllBlogs data={blog} />
+      ))}
     </div>
   );
 };

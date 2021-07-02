@@ -1,0 +1,16 @@
+.detail_container {
+  height: 100%;
+  width: 100%;
+}
+.detail_container div img {
+  width: 40%;
+}
+.detail_container div h2 {
+  margin: 20px;
+  font-size: 50px;
+}
+
+.detail_container p {
+  width: 80%;
+  margin-left: 10%;
+}
