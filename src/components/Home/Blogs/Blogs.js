@@ -6,7 +6,6 @@ import "./Blogs.css";
 
 const Blogs = () => {
   const [blogs, setBlog] = useState([]);
-  console.log(blogs);
   useEffect(() => {
     fetch("https://bagged-poutine-86328.herokuapp.com/blogs")
       .then((res) => res.json())
